@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Calibri';
+    box-sizing: border-box;
+}
+.imagen{
+    background-image:url(https://images6.alphacoders.com/122/1222822.jpg);
+    background-color: #343741;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.icon{
+    color: #C1C1C1;
+    position: absolute;
+    left: 20px ;
+    top:58;
+    margin-right: 0px;
+    font-size: 25px;
+    font-family: 'Arial';
+}
+.icon,.menu{
+    cursor: pointer;
+}
+header{
+    padding: 0px;
+    width: 100%;
+    height: 120px;
+    background-color: #343741;
+    position: fixed;
+}
+.titulo{
+    color: #C1C1C1;
+    padding-left: 20px;
+}
+.menu{
+    position: absolute;
+    top:70px;
+    left: 15px;
+    justify-content: left;
+    display:flex;
+    color: #C1C1C1;
+    border:1px none;
+    border-radius: 0px;
+    margin-left: 30px;
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+.opciones{
+    color: #C1C1C1;
+    border:2px none;
+    border-radius: 0px;
+    margin-right: 20px;
+    padding: 10px;
+    display :flex;
+    text-decoration: none;
+    list-style: none;
+}
+.paginas{
+    justify-content: right;
+    display:flex;
+}
+.icon:hover,.opciones:hover,.menu:hover{
+    color: aqua;
+}
+#btn{
+    display:none;
+}
+.container-menu{
+    position: fixed;
+    background: #343741;
+    width: 10%;
+    height: 100vh;
+    top:115px;left: 0px;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+#btn:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+.cont-menu nav{
+    transform: translateY(0%);
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #C1C1C1;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 5px solid aqua;
+    background: #414553;
+    color: aqua;
+}
+.registro{
+    width: 100%;
+    height: 50vh;
+    padding-top:150px;
+}
+.formulario{
+    min-height: 100hv;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: rgba(52,55,65,50%);
+}
+.formulario input,.formulario textarea{
+    background: rgba(52,55,65,50%);
+    color: aqua;
+}
+.formulario label,.formulario div input{
+    color:#C1C1C1;
+    padding: 10px;
+}
+.formulario label:hover,.formulario div input:hover{
+    color: aqua;
+}
+.formulario textarea{
+    width: 100%;
+    resize: none;
+}
+.formulario div input:hover{
+    background: rgba(52,55,65,100%);
+}
+.character{
+    width: 100%;
+    padding-top: 120px;
+}
+.polearm{
+    width: 100%;
+    padding-top: 120px;
+}
+h1{
+    text-align: center;
+    padding-top: 10px;
+}
+table{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(121, 121, 122, 0.5);
+    border-radius:15px;
+}
+td,tr,th{
+    color: #dfdfdf;
+    text-align: center;
+    border: 2px solid #343741;
+    background:linear-gradient(rgba(52,55,65,0%)15px,#2c2e31);
+    background-color: rgba(52,55,65,20%);
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+.anemo{
+    background:linear-gradient(#343741 15px,rgb(52, 155, 150));
+}
+.geo{
+    background:linear-gradient(#343741 15px,rgb(177, 161, 20));
+}
+.dendro{
+    background:linear-gradient(#343741 15px,rgb(45, 155, 51));
+}
+.pyro{
+    background:linear-gradient(#343741 15px,rgb(145, 68, 17));
+}
+.hydro{
+    background:linear-gradient(#343741 15px,rgb(34, 108, 219));
+}
+.cryo{
+    background:linear-gradient(#343741 15px,rgb(32, 143, 143));
+}
+.electro{
+    background:linear-gradient(#343741 15px,rgb(129, 64, 204));
+}
+.elemento{
+    width: 100px;
+    height: 100px;
+}
+.armamento{
+    color: #dfdfdf;
+    text-align: center;
+    border: 2px solid #343741;
+    background:linear-gradient(rgba(52,55,65,0%)15px,#2c2e31);
+    background-color: rgba(52,55,65,20%);
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
